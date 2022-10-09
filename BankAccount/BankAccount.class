@@ -1,0 +1,8 @@
+public class SavingsAccountTest{
+    public static void main(String[] args) {
+        
+        SavingsAccount test_2 = new SavingsAccount();
+
+        System.out.println("Interesse" test_2.getBalance());
+    }
+}
