@@ -10,4 +10,3 @@ public class SavingsAccount extends BankAccount{
         this.deposit(this.getBalance()*interesse/100);
         }
     }
-

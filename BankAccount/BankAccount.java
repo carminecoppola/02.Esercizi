@@ -12,29 +12,32 @@
 
 public class BankAccount { 
 
-
+    //Costruttore
+    public BankAccount(double quant){
+        saldo = 500;   //Saldo
+        qt = quant;  //Quantita da sommare o sottrarre
+    }
 
     //Deposito
-    public int deposit(int qt){
+    public double deposit(double qt){
         saldo = saldo+qt;
         return saldo;
     }
     //Prelievo
-    public int withdraw(int qt){
+    public double withdraw(double qt){
         saldo = saldo-qt;
         return saldo;
     }
     //Saldo
-    public int getBalance(){
+    public double getBalance(){
         return saldo;
     }
 
-    //Costruttore
-    public BankAccount( int quant){
-        saldo=500;   //Saldo
-        qt=quant;  //Quantita da sommare o sottrarre
+    //Costruttore implicito
+    public BankAccount(){
+        this(0.0);
     }
-    private int qt;
-    private int saldo;
+    private double qt;
+    private double saldo;
 }
 
