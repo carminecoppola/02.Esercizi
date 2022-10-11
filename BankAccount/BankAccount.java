@@ -10,12 +10,25 @@
     3)Stampa Saldo
 */
 
-public class BankAccount { 
+public class BankAccount {
+        private  int num_conto;
+        private static int n = 0;
+        private double saldo;
+        private static BankAccount[] array;
+        private double totale = 0;
 
-    //Costruttore
+        //Costruttore
     public BankAccount(double quant){
-        saldo = 500;   //Saldo
-        qt = quant;  //Quantita da sommare o sottrarre
+        n++;
+        num_conto = n;   //Numero di conto
+        saldo = quant;   //Saldo
+
+    }
+
+    //Costruttore implicito
+    public BankAccount(){
+        this(0.0);
+
     }
 
     //Deposito
@@ -33,11 +46,7 @@ public class BankAccount {
         return saldo;
     }
 
-    //Costruttore implicito
-    public BankAccount(){
-        this(0.0);
-    }
-    private double qt;
-    private double saldo;
-}
 
+
+
+}
