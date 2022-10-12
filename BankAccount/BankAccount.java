@@ -16,25 +16,30 @@ public class BankAccount {
         private double saldo;
         private static BankAccount[] array;
         private double totale = 0;
+        private int cont_dep;
+
+    public int getCont_dep() {
+        return cont_dep;
+    }
 
         //Costruttore
     public BankAccount(double quant){
         n++;
-        num_conto = n;   //Numero di conto
-        saldo = quant;   //Saldo
+        num_conto = n;     //Numero di conto
+        saldo = quant;    //Saldo
+        cont_dep = 0;    //Contatore dei depositi
 
     }
 
     //Costruttore implicito
     public BankAccount(){
         this(0.0);
-
     }
 
     //Deposito
-    public double deposit(double qt){
+    public void  deposit(double qt){
         saldo = saldo+qt;
-        return saldo;
+        cont_dep++;
     }
     //Prelievo
     public double withdraw(double qt){
@@ -45,8 +50,5 @@ public class BankAccount {
     public double getBalance(){
         return saldo;
     }
-
-
-
 
 }

@@ -10,12 +10,10 @@ public class SavingsAccountTest{
         //Seconda persona che effettua operazioni
         fineco.getBanca(2).deposit(505);
         fineco.getBanca(2).withdraw(200);
-        System.out.println("Bilancio della Persona 2: "+fineco.getBanca(3).getBalance());
-        //Terza persona che effettua operazioni
-        fineco.getBanca(3).deposit(3);
-        fineco.getBanca(3).deposit(505);
-        System.out.println("Bilancio della Persona 3: "+fineco.getBanca(3).getBalance());
+        System.out.println("Bilancio della Persona 2: "+fineco.getBanca(2).getBalance());
         System.out.println("Questo è il bilancio di tutti i conti della banca: "+fineco.totBilancio());
+
+        System.out.println("Questo è il numero di depositi avvenuti nella banca:"+fineco.totDepositi());
 
         //Aggiunta del tasso di interesse
         //prova.addInterest();

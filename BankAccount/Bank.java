@@ -1,10 +1,12 @@
 public class Bank {
     private BankAccount[] banca;
     private static double totBil=0;
+    private int totDep=0;
+
 
     //Costruttore
     public Bank(){
-        banca = new BankAccount[5];
+        banca = new SavingsAccount[5];
         buildArray();
     }
 
@@ -18,7 +20,7 @@ public class Bank {
     // di tipo BankAccount()
     private void buildArray(){
         for (int i=0;i<banca.length;i++){
-            banca[i] = new BankAccount();
+            banca[i] = new SavingsAccount(10);
         }
     }
 
@@ -31,4 +33,10 @@ public class Bank {
         return totBil;
     }
 
+    public  int totDepositi(){
+        for (int i=0;i<banca.length;i++){
+            totDep += banca[i].getCont_dep();
+        }
+        return totDep;
+    }
 }
