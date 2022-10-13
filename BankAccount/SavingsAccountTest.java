@@ -43,5 +43,7 @@ public class SavingsAccountTest{
         check.deductFees();
         System.out.println("-Il bilancio con applicate le commisioni è: "+check.getBalance());
 
+        //provo il commit
+        System.out.println("Ciao");
     }
 }
