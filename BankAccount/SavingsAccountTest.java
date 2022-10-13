@@ -25,7 +25,11 @@ public class SavingsAccountTest{
         System.out.println("\n-Questo è il bilancio di tutti i conti della banca: "+fineco.totBilancio()+"€");
         System.out.println("-Questo è il numero di depositi avvenuti nella banca: "+fineco.totDepositi()+" Depositi effettuati");
 
-        System.out.println("\nConversione del saldo in dollari del conto: " + fineco.getBanca(2).printConto());
+        //Conversione in dollari
+        System.out.println("\n1)Conversione del saldo in dollari del conto: " + fineco.getBanca(1).printConto());
+        System.out.println("Il saldo in euro era: " + fineco.getBanca(1).getBalance()+"€");
+        System.out.println("Il saldo convertito in dollari è: "+ fineco.getBanca(1).convert()+"$");
+        System.out.println("\n2)Conversione del saldo in dollari del conto: " + fineco.getBanca(2).printConto());
         System.out.println("Il saldo in euro era: " + fineco.getBanca(2).getBalance()+"€");
         System.out.println("Il saldo convertito in dollari è: "+ fineco.getBanca(2).convert()+"$");
     }
