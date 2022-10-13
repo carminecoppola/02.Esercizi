@@ -18,14 +18,13 @@ public class BankAccount {
         private double totale = 0;
         private int cont_dep;
 
-    public int getCont_dep() {
+    public int getContDep() {
         return cont_dep;
     }
 
         //Costruttore
     public BankAccount(double quant){
-        n++;
-        num_conto = n;     //Numero di conto
+        num_conto = n++;     //Numero di conto
         saldo = quant;    //Saldo
         cont_dep = 0;    //Contatore dei depositi
 
@@ -49,6 +48,11 @@ public class BankAccount {
     //Saldo
     public double getBalance(){
         return saldo;
+    }
+
+    public void printConto(){
+        String formattedNumber = String.format("%010d", num_conto);
+        System.out.println("Il numeroconto è " + formattedNumber);
     }
 
 }

@@ -6,7 +6,7 @@ public class SavingsAccountTest{
         //Prima persona che effettua operazioni
         fineco.getBanca(1).deposit(100);
         fineco.getBanca(1).deposit(700);
-        fineco.getBanca(1).printNumConto();
+        fineco.getBanca(1).printConto();
         System.out.println("1) Bilancio della Persona 1: "+fineco.getBanca(1).getBalance());
 
 
