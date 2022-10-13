@@ -33,11 +33,15 @@ public class SavingsAccountTest{
         System.out.println("Il saldo in euro era: " + fineco.getBanca(2).getBalance()+"€");
         System.out.println("Il saldo convertito in dollari è: "+ fineco.getBanca(2).convert()+"$");
 
+        //Operazioni di tipo Check
         check.deposit(20);
         check.deposit(10);
         check.withdraw(10);
         check.deposit(10);
         check.withdraw(10);
-        System.out.println("Il bilancio attuale è: "+fineco.getBanca(1).getBalance());
+        System.out.println("\n-Il bilancio attuale senza commisioni è: "+check.getBalance());
+        check.deductFees();
+        System.out.println("-Il bilancio con applicate le commisioni è: "+check.getBalance());
+
     }
 }
