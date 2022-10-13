@@ -19,11 +19,6 @@ public class BankAccount {
         private int cont_dep;
         private static double dollaro = 0.97;
 
-
-    public int getContDep() {
-        return cont_dep;
-    }
-
         //Costruttore
     public BankAccount(double quant){
         num_conto = n++;     //Numero di conto
@@ -43,14 +38,19 @@ public class BankAccount {
         cont_dep++;
     }
     //Prelievo
-    public double withdraw(double qt){
+    public void withdraw(double qt){
         saldo = saldo-qt;
-        return saldo;
+        //return saldo;
     }
     //Saldo
     public double getBalance(){
         return saldo;
     }
+
+    public int getContDep() {
+        return cont_dep;
+    }
+
 
     public String printConto(){
         String formattedNumber = String.format("%010d", num_conto);

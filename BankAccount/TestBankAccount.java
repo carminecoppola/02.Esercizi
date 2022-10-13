@@ -11,7 +11,7 @@ public class TestBankAccount{
         BankAccount test = new BankAccount( 10);
         test.deposit(50);
         System.out.println("Il saldo dopo il deposito è: " + test.getBalance());
-        System.out.println("Il saldo dopo il prelievo è: " + test.withdraw(100));
+        //System.out.println("Il saldo dopo il prelievo è: " + test.withdraw(100));
         System.out.println("Il tuo saldo: " + test.getBalance());
 
 

@@ -2,13 +2,13 @@ public class SavingsAccountTest{
     public static void main(String[] args) {
 
         Bank fineco = new Bank();   //Crazione dell' array di tipo banca
+        CheckingAccount check = new CheckingAccount(0); //Oggetto per verificare le commissioni
 
         //Prima persona che effettua operazioni
         fineco.getBanca(1).deposit(5000);
         fineco.getBanca(1).deposit(100);
         fineco.getBanca(1).printConto();
         System.out.println("1) Bilancio della Persona 1: "+fineco.getBanca(1).getBalance()+"€");
-
 
         //Seconda persona che effettua operazioni
         fineco.getBanca(2).deposit(500);
@@ -32,5 +32,12 @@ public class SavingsAccountTest{
         System.out.println("\n2)Conversione del saldo in dollari del conto: " + fineco.getBanca(2).printConto());
         System.out.println("Il saldo in euro era: " + fineco.getBanca(2).getBalance()+"€");
         System.out.println("Il saldo convertito in dollari è: "+ fineco.getBanca(2).convert()+"$");
+
+        check.deposit(20);
+        check.deposit(10);
+        check.withdraw(10);
+        check.deposit(10);
+        check.withdraw(10);
+        System.out.println("Il bilancio attuale è: "+fineco.getBanca(1).getBalance());
     }
 }
