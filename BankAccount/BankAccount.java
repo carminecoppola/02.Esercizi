@@ -52,7 +52,7 @@ public class BankAccount {
 
     public void printConto(){
         String formattedNumber = String.format("%010d", num_conto);
-        System.out.println("Il numeroconto è " + formattedNumber);
+        System.out.println("\nQuesto è il numero conto: " + formattedNumber);
     }
 
 }
