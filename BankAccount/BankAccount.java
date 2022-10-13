@@ -17,6 +17,8 @@ public class BankAccount {
         private static BankAccount[] array;
         private boolean tassa;
         private int cont_dep;
+        private static double dollaro = 0.97;
+
 
     public int getContDep() {
         return cont_dep;
@@ -67,4 +69,10 @@ public class BankAccount {
             return tassa = true;
         return tassa;
     }
+
+    public double convert(){
+        return getBalance() * dollaro;
+    }
+
+
 }

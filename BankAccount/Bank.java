@@ -2,7 +2,7 @@
         - Bilancio totale della banca;
         - Contare il numero di depositi
         - Stampare il numero di conto corrente usando sempre 10 cifre
-        - Tassare i conti corrente con più di 5000$
+        - Tassare i conti corrente con più di 5000€
         - Convertire la valuta di un singolo conto corrente
 */
 
