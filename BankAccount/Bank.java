@@ -1,5 +1,13 @@
+/* Modificare BankAccount e SavingAccount inserendo un array di conti correnti. Calcolare :
+        - Bilancio totale della banca;
+        - Contare il numero di depositi
+        - Stampare il numero di conto corrente usando sempre 10 cifre
+        - Tassare i conti corrente con più di 5000$
+        - Convertire la valuta di un singolo conto corrente
+*/
+
 public class Bank {
-    private BankAccount[] banca;
+    private SavingsAccount[] banca;
     private static double totBil=0;
     private int totDep=0;
 
@@ -33,10 +41,12 @@ public class Bank {
         return totBil;
     }
 
-    public  int totDepositi(){
+    //Calcola il totale di depositi effettuati nella banca
+    public int totDepositi(){
         for (int i=0;i<banca.length;i++){
-            totDep += banca[i].getCont_dep();
+            totDep += banca[i].getContDep();
         }
         return totDep;
     }
-}
+
+}//Fine Classe
