@@ -49,4 +49,15 @@ public class Bank {
         return totDep;
     }
 
+    public void tassamento(double tx) {
+        for (int i = 0; i < banca.length; i++) {
+            if (banca[i].getBalance() >= 5000 && !banca[i].isTass()) {
+                banca[i].withdraw(tx);
+                banca[i].setTassa(true);
+                System.out.println("Account numero "+ banca[i].printConto() +" è stato tassato");
+            }
+        }
+    }
+
+
 }//Fine Classe

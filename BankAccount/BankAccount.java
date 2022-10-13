@@ -15,7 +15,7 @@ public class BankAccount {
         private static int n = 0;
         private double saldo;
         private static BankAccount[] array;
-        private double totale = 0;
+        private boolean tassa;
         private int cont_dep;
 
     public int getContDep() {
@@ -50,9 +50,21 @@ public class BankAccount {
         return saldo;
     }
 
-    public void printConto(){
+    public String printConto(){
         String formattedNumber = String.format("%010d", num_conto);
-        System.out.println("\nQuesto è il numero conto: " + formattedNumber);
+        //System.out.println("\nQuesto è il numero conto: " + formattedNumber);
+        return formattedNumber;
     }
 
+    //Setto il valore di tass
+    public void setTassa(boolean tassa) {
+        this.tassa = tassa;
+    }
+
+    //Controllo se il conto è gia stato tassato
+    public boolean isTass(){
+        if (tassa)
+            return tassa = true;
+        return tassa;
+    }
 }

@@ -4,8 +4,8 @@ public class SavingsAccountTest{
         Bank fineco = new Bank();   //Crazione dell' array di tipo banca
 
         //Prima persona che effettua operazioni
+        fineco.getBanca(1).deposit(5000);
         fineco.getBanca(1).deposit(100);
-        fineco.getBanca(1).deposit(700);
         fineco.getBanca(1).printConto();
         System.out.println("1) Bilancio della Persona 1: "+fineco.getBanca(1).getBalance());
 
@@ -16,6 +16,10 @@ public class SavingsAccountTest{
         fineco.getBanca(2).printConto();
         System.out.println("2)Bilancio della Persona 2: "+fineco.getBanca(2).getBalance());
 
+        //Tassamento
+        fineco.tassamento(100);
+        System.out.println("\n1)Bilancio prima persona dopo tassamento: "+fineco.getBanca(1).getBalance());
+        System.out.println("2)Bilancio seconda persona dopo tassamento: "+fineco.getBanca(2).getBalance());
 
         //Bilancio totale e totale depositi
         System.out.println("\n-Questo è il bilancio di tutti i conti della banca: "+fineco.totBilancio());
