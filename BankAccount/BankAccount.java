@@ -10,7 +10,7 @@
     3)Stampa Saldo
 */
 
-public class BankAccount {
+public class BankAccount implements Measurable{
         private  int num_conto;
         private static int n = 0;
         private double saldo;
@@ -51,7 +51,6 @@ public class BankAccount {
         return cont_dep;
     }
 
-
     public String printConto(){
         String formattedNumber = String.format("%010d", num_conto);
         //System.out.println("\nQuesto è il numero conto: " + formattedNumber);
@@ -74,5 +73,7 @@ public class BankAccount {
         return getBalance() * dollaro;
     }
 
-
+    public double getMeasure(){
+        return saldo;
+    }
 }
