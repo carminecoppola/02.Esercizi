@@ -6,7 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Aritmetica" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/BankAccount" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Greeter" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Purse" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Stampa-e-Leggi" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
