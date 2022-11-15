@@ -16,6 +16,7 @@ public class SavingsAccountTest{
         fineco.getBanca(2).printConto();
         System.out.println("2)Bilancio della Persona 2: "+fineco.getBanca(2).getBalance()+"€");
 
+
         //Tassamento
         fineco.tassamento(100);
         System.out.println("\n1)Bilancio prima persona dopo tassamento: "+fineco.getBanca(1).getBalance()+"€");

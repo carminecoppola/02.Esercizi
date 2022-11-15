@@ -39,9 +39,20 @@ public class BankAccount implements Measurable{
     }
     //Prelievo
     public void withdraw(double qt){
-        saldo = saldo-qt;
-        //return saldo;
+        try {
+            //Controllo sullo stato del saldo
+            //Se la quantità da prelevare è maggiore
+            //del saldo allora si crea l'eccezzione
+            if (qt > this.getBalance()){
+                throw new NoFundsException();
+            }
+            saldo = saldo-qt;
+        }
+        catch (NoFundsException exc){
+            System.out.println(exc.toString());
+        }
     }
+
     //Saldo
     public double getBalance(){
         return saldo;
