@@ -2,9 +2,9 @@
 
 Welcome to my GitHub repository containing the exercises completed during the Programming 3 course at Parthenope University in Naples. This repository was created solely for educational purposes and includes exercises related to the BanckAccount concept, along with various variations, as well as other related exercises.
 
-# BanckAccount Exercises
+# BankAccount Exercises
 
-The BanckAccount folder contains the basic implementation of the BanckAccount concept, which includes deposit, withdrawal, and balance checking operations. A BanckAccountTest.java test file has also been included to verify the correct functioning of the implementation.
+The BankAccount folder contains the basic implementation of the BankAccount concept, which includes deposit, withdrawal, and balance checking operations. A BankAccountTest.java test file has also been included to verify the correct functioning of the implementation.
 
 # Other Exercises
 
