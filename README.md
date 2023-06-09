@@ -8,7 +8,7 @@ The BankAccount folder contains the basic implementation of the BankAccount conc
 
 # Other Exercises
 
-The AltriEsercizi folder contains additional exercises that are not directly related to the BanckAccount concept but still cover topics covered in the Programming 3 course. Each exercise has its own .java source file and the associated test file.
+The AltriEsercizi folder contains additional exercises that are not directly related to the BankAccount concept but still cover topics covered in the Programming 3 course. Each exercise has its own .java source file and the associated test file.
 
 # Contributions and Usage
 
